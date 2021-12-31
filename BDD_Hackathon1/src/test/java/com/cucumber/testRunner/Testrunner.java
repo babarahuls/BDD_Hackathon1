@@ -16,9 +16,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/java/com/cucumber/features"
 		,glue= {"com.cucumber.stepDefinitions"}
+		//,plugin = {"html:target/cucumber-html-report","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/extendreport.html"}
 		//,plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		//,plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
-		,monochrome = true
+		//,monochrome = true
 		)
 public class Testrunner 
 {
